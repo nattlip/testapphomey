@@ -27,7 +27,7 @@ console.log("dir", process.cwd());
 
 
 deleteFolderRecursive(path);
-console.log("athom login\n");
+
 //exec("athom login");
 
 
@@ -47,7 +47,8 @@ child.stdin.setEncoding('utf-8');
 child.stdout.pipe(process.stdout);
 
 child.stdin.write("athom login \n");
-
+hild.stdin.write("youremail@hotmail.com\n");
+child.stdin.write("yourhomeypassword\n");
 setTimeout(function () {
     
    var i = 0;
